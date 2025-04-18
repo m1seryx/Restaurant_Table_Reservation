@@ -1,0 +1,136 @@
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .homeContainer, .booknow {
+    width: 100%; 
+    max-width: 800px;
+    margin: 0 auto; 
+    overflow: hidden;
+  }
+
+  .homeContainer{
+    height:50vh;
+  }
+
+  /*DISHES RESPONSIVENESS*/
+
+  .main-dish-container, .side-dish-container{
+    height: 50vh;
+  }
+  
+  .slider-container{
+    height: 50%;
+    width: 70%;
+  }
+
+
+  /*FEEDBACK RESPONSIVENESS*/
+
+
+  
+}
+
+@media (max-width: 768px) {
+  .main-dish-container h1, .side-dish-container h1{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeContainer, .booknow{
+    width: 100%; 
+    max-width: 100%;
+    margin: 0 auto; 
+    overflow: hidden; 
+  }
+
+  .homeContainer h1{
+    font-size: 20px;
+  }
+
+  .homeContainer p{
+    font-size: 15px;
+  }
+
+   /*DISHES RESPONSIVENESS*/
+
+   .main-dish-container, .side-dish-container{
+    height: 40vh;
+  }
+  .text-main-dish h1{
+    font-size: 20px;
+  }
+  .text-main-dish p{
+    font-size: 10px;
+  }
+  
+  .slider-div{
+    display: flex;
+    width: 50%;
+
+  }
+  
+  .slider-container{
+    height: 40%;
+    width: 50%;
+  }
+
+  .caption{
+    font-size: 10px;
+  }
+
+
+
+ 
+  .book {
+    font-size: 0.5rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .form form {
+    padding: 1.5rem;
+  }
+
+  form input, form select {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  form .sub {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+
+
+
+    /*FEEDBACK RESPONSIVENESS*/
+
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*transition*/
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}

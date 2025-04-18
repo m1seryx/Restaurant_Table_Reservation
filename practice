@@ -1,0 +1,38 @@
+<div><h1 class="menu-section" data-aos="fade-left">MENU SECTION</h1></div> <br>  <br>  <br>
+  <h2 data-aos="fade-left">BEST SELLING DISH</h2>
+  <div class="menus">
+    <div class="menu">
+    <img src="../image/bestSelling.png" alt=""  data-aos="fade-left" width="400" id="bestDish" onclick="popimg()">
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closepopup()">
+    <img src="../image/bestSelling.png" alt=""  data-aos="fade-left" width="400"  >
+    </div>
+    
+
+  </div>
+
+
+  <div><h2 data-aos="fade-left">BEST SELLING BEVERAGES</h2></div>
+  <div class="menus">
+    <div class="menu">
+    <img src="../image/Beverages.png" alt=""  data-aos="fade-left" onclick="popBeverage()">
+  </div>
+
+    <div class="overlayBeverage" id="overlayBeverage" onclick="closeBeverage()">
+    <img src="../image/Beverages.png" alt=""  data-aos="fade-left" width="400"  >
+    </div>
+  </div>
+
+
+  <h2 data-aos="fade-left">SIDE DISH</h2>
+  <div class="menus">
+    <div class="menu">
+    <img src="../image/sidedish.png" alt=""  data-aos="fade-left" onclick="popSideDish()">
+    </div>
+    
+    <div class="overlaySideDish" id="overlaySideDish" onclick="closeSideDish()">
+    <img src="../image/Beverages.png" alt=""  data-aos="fade-left" width="400"  >
+    </div>
+
+  </div>

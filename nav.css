@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh; 
+    overflow-y: auto !important;
+   
+}
+
+.logouts{
+    color: rgb(76, 8, 8);
+}
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+   backdrop-filter: blur(5px);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+    
+nav .logo{
+    letter-spacing: 7px;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover{
+    color: #FEA116;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.menu-bar{
+display: none;
+}
+
+li img{
+    width: 40px;
+}
+
+.sidebar{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    z-index: 1000;
+    
+    
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+   
+}
+
+.sidebar li{
+    width: 100%;
+    backdrop-filter: blur(50px);
+}
+
+.sidebar a{
+    color: orange;
+    background-color: rgb(39, 37, 37);
+    font-size: 1em;
+    gap: 3em;
+    width: 100%;
+    backdrop-filter: blur(50px);
+}
+
+.sidebar .logouts{
+    color: rgb(167, 4, 4);
+}
+.sidebar a:hover{
+    background-color: gray;
+}
+
+
+/*LOGOUT FORM*/
+
+
+.logout-div{
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    display: none;
+}
+
+
+.logout{
+    display: flex;
+    width: 25%;
+    background-color: white;
+    height: 22vh;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.letter{
+    line-height: 0.8;
+}
+
+.letter p{
+    font-size: 15px;
+    color: gray;
+}
+
+.logout h1{
+    font-size: 20px;
+}
+
+.confirm{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    padding-top: 20px;  
+}
+
+.confirm button{
+    width: 150px;
+    padding: 15px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.confirm a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.LOGOUT button{
+    background-color: #FEA116;
+    border: none;
+}
+
+.LOGOUT a{
+    color: white;
+}
+
+.cancel a{
+    color: #FEA116;
+}
+
+.cancel button{
+    background-color: white;
+    border: 2px solid #FEA116 ;
+}
+
+
+@media (max-width: 800px){
+    .hideMobile{
+        display: none;
+    }
+
+    .menu-bar{
+        display: inline-block;
+    }
+ul input{
+    display: none;
+}
+
+.logout{
+    width: 30%;
+    height: 17vh;
+
+}
+
+.confirm button{
+    width: 70px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+}
+
+
+@media (max-width: 620px){
+    .logout{
+        width: 33%;
+        height:20vh;
+    
+    }
+    .logout h1{
+        font-size: 15px;
+    }
+    
+    .confirm button{
+        width: 60px;
+        padding: 5px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    .cofirm a{
+        font-size: 10px;
+    }
+    
+}
+
+
+
+

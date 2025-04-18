@@ -1,0 +1,94 @@
+html, body{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url(../image/rest.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+}
+*{
+  text-decoration: none;
+}
+
+
+.main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container{
+  margin-bottom: 10rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+  height: 100%;
+   width: 100%;
+  
+}
+
+.book{
+  margin-top: 3rem;
+}
+
+.book a{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid white;
+  color: white;
+  font-size: 5rem;
+  padding: 5rem;
+  border-radius: 3rem;
+ 
+}
+
+.book:hover a{
+  color:#333;
+  background-color:white;
+  transition: background 0.3s;
+
+}
+
+.vip_reg{
+ 
+  display:flex;
+  align-items: center;
+  justify-content: center
+}
+
+.vip_reg div{
+  margin-top: 10rem;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.vip_reg h1{
+  font-size: 10rem;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+
+}
+.vip_reg p{
+  font-size: 5rem;
+  color: white;
+  font-weight: 10px; 
+  text-shadow: 50px 50px 100px rgba(0, 0, 0, 0.9);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+
+.reservation h1{
+  font-size: 2vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  text-shadow: 50px 50px 100px rgba(0, 0, 0, 0.9);
+  
+}
+
+
+

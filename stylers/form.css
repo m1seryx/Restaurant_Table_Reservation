@@ -1,0 +1,87 @@
+html, body{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+  url(../image/rest.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  border: none;
+  flex-direction: column;
+  display: flex;
+ 
+  height: 40%;
+  width: 30%;
+  background-color:#333;  
+  border-radius: 4rem;
+}
+
+.container h2{
+  font-size: 7rem;
+  color: white;
+}
+
+form div{
+  margin-top: 6rem;
+}
+.radioBT{
+  transform: scale(9);
+  margin-right: 4rem;
+}
+
+form label{
+  color: white;
+  font-size: 5rem;
+  margin: 4rem 5rem;
+}
+
+input{
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 5rem;
+}
+
+select{
+  width: 90rem;
+  height: 8rem;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 5rem;
+  
+}
+
+input[type="submit"]{
+  color: black;
+  width: 4em;
+  height: 2em;
+  border:none;
+}
+
+input[type="submit"]{
+  color: black;
+  width: 4em;
+  height: 2em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(9, 9, 139);
+
+  color: white;
+}
+
+
+

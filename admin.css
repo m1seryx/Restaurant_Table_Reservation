@@ -1,0 +1,122 @@
+html, body{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url(image/background-2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+h1 {
+  text-align: center;
+  color: #f0ebeb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+tbody{
+  border: 2px solid orange;
+}
+
+thead {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  color:orange;
+  font-size: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #323333;
+}
+
+.action-btn {
+  padding: 8px 14px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  
+}
+
+td button{
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid orange;
+  width: 30%;
+  cursor: pointer;
+  color: orange;
+  font-size: 20px;
+}
+
+td .Accept:hover{
+  background-color: rgb(4, 43, 4);
+}
+td .Reject:hover{
+  background-color: rgb(142, 21, 8);
+}
+
+
+/*navbar*/
+
+nav{
+  width: 100%;
+  display: flex;
+  height: auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  border: 1px solid blue;
+}
+
+li{
+  display: flex;
+  border: 1px solid red;
+  width: 30%;
+  height: 22px;
+  justify-content: center;
+}
+li:first-child{
+  margin:0;
+  margin-right: auto;
+}
+
+.logo a{
+  color: White;
+}
+
+li a{
+  text-decoration: none;
+  color: orange;
+  font-size: 25px;
+}
+
+li :hover{
+  background-color: #7a7e7e;
+}

@@ -1,0 +1,202 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../image/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Dim Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fea116;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+nav .logo {
+  margin-right: auto;
+  letter-spacing: 7px;
+}
+
+.menu-bar {
+  display: none;
+}
+
+li img {
+  width: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: white;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 1);
+  z-index: 1000;
+}
+
+.sidebar li,
+.sidebar a {
+  width: 100%;
+  padding: 15px;
+}
+
+.sidebar a {
+  font-size: 1em;
+}
+
+.sidebar a:hover {
+  background-color: gray;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .hideMobile {
+    display: none;
+  }
+
+  .menu-bar {
+    display: inline-block;
+  }
+}
+
+/* Welcome Message */
+.welcome {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  font-family: 'Cursive', sans-serif;
+  margin-top: 100px;
+}
+
+/* Content Container */
+.container {
+  background: white;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 1em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+.month {
+  font-weight: bold;
+  margin-left: auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Status Labels */
+
+
+/* Action Buttons */
+td .Accept, td .Reject, td .Delete{
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid orange;
+}
+
+td .Accept:hover{
+  background-color: green;
+  color: white;
+}
+td .Reject:hover{
+  background-color: red;
+  color: white;
+}
+
+td .Delete:hover{
+  background-color: red;
+  color: white;
+}
+
