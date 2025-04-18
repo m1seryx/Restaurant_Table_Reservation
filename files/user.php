@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['email'] = $row['email'];
 
           
-            if ($row['email'] === "mamiala@admin.com") {
+            if ($row['email'] === "mamiala@admin.com" || $row['email'] === "paul@admin.com" || $row['email'] === "avrey@admin.com") {
                 // Admin login
                 header("Location: reservation_admin.php");
                 exit();
