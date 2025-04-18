@@ -20,7 +20,7 @@
       <h1><strong>"Savor the flavor!"</strong><br> Where Every Bites Tells a Story"</h1>
     </div>
     <div>
-      <p>Craving Something Delicious?
+      <p>Craving Something Delicious? 
       Reserve your seat now and indulge in mouthwatering dishes made with love and the finest ingredients.</p>
     </div>
     <div class="book">
