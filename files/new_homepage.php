@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php include "../navbar.php" ?>
+<?php include "../navbar.php" ?>  
 
 
 <!--HOME CONTAINER ANG PICTURE -->
