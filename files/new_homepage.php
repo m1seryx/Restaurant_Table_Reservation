@@ -17,7 +17,8 @@
 <div class="homeContainer" id="home">
   <div class="img-container">
     <div>
-      <h1><strong>"Savor the flavor!</strong><br> Where Every Bites Tells a Story"</h1>
+      <h1><strong>"Savor the flavor!
+      Where Every Bites Tells a Story"</strong><br> Where Every Bites Tells a Story"</h1>
     </div>
     <div>
       <p>Craving Something Delicious?
