@@ -1,5 +1,8 @@
 <?php
+header('Content-Type: application/json'); // So JS can parse it
+
 include '../database.php';
+
 if (!isset($_GET['reservation_id'])) {
     echo json_encode(['error' => 'Reservation ID is required']);
     exit;
