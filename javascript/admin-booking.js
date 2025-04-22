@@ -74,6 +74,32 @@ function displayRetrieveActive(reservations) {
   });
 }
 
+/*DELETE RESERVATION*/
+
+  function Delete(reservationId) {
+    if (confirm("Are you sure you want to delete this reservation?")) {
+      fetch(`../backendUser/deleteReservation.php?reservation_id=${reservationId}`, {
+        method: 'GET'
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          alert(data.success);
+         
+          document.getElementById(`reservation-${reservationId}`).remove();
+          location.reload();
+        } else {
+          alert(data.error || "Failed to delete reservation.");
+        }
+      })
+      .catch(error => {
+        alert("Error deleting reservation.");
+        console.error(error);
+      });
+    }
+  }
+
+
 // Approve/Reject
 function approveReservation(reservationId) {
   updateReservationStatus(reservationId, 'Confirmed');
@@ -106,3 +132,5 @@ function updateReservationStatus(reservationId, action) {
       console.error('Error updating reservation status:', error);
     });
 }
+
+

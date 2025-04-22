@@ -56,11 +56,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const tableDiv = document.createElement('div');
         tableDiv.classList.add('table');
         tableDiv.setAttribute('data-table-id', table.table_id);
-        tableDiv.textContent = `Table ${table.table_number} – Seats: ${table.capacity}`;
+        tableDiv.textContent = `Table ${table.table_number}  Seats: ${table.capacity}`;
   
         tableDiv.addEventListener('click', function () {
           selectedTable = table;
-          modalTableInfo.textContent = `Table ${table.table_number} – Seats: ${table.capacity}`;
+          modalTableInfo.textContent = `Table ${table.table_number}`;
           reservationModal.classList.remove('hidden');
         });
   

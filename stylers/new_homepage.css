@@ -517,3 +517,21 @@ span{
   font-size: 24px;
   cursor: pointer;
 }
+
+.confirmBtttn{
+  padding: 5px;
+  margin-top: 5px;
+  background-color: transparent;
+  color:gray;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+.confirmBtttn:hover{
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+}
+
