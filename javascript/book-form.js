@@ -1,43 +1,5 @@
 
 
-
-function popimg(){
-  let overlayDiv = document.getElementById("overlay");
-
-  overlayDiv.style.display = "flex";
-}
-
-function closepopup(){
-  let overlayDiv = document.getElementById("overlay");
-  overlayDiv.style.display = "none";
-}
-
-
-function popBeverage(){
-  let overlayDiv = document.getElementById("overlayBeverage");
-
-  overlayDiv.style.display = "flex";
-}
-
-function closeBeverage(){
-  let overlayDiv = document.getElementById("overlayBeverage");
-  overlayDiv.style.display = "none";
-}
-
-
-
-function popSideDish(){
-  let overlayDiv = document.getElementById("overlaySideDish");
-
-  overlayDiv.style.display = "flex";
-}
-
-function closeSideDish(){
-  let overlayDiv = document.getElementById("overlaySideDish");
-  overlayDiv.style.display = "none";
-}
-
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
