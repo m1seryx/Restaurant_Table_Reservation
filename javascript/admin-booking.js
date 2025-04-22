@@ -80,7 +80,7 @@ function retriveActive() {
 
   function Delete(reservation_id) {
     if (confirm("Are you sure you want to delete this reservation?")) {
-      fetch(`../backendUser/deleteReservation.php?reservation_id=${reservation_id}`, {
+      fetch(`../backendAdmin/deleteReservation.php?reservation_id=${reservation_id}`, {
         method: 'GET'
       })
       .then(response => response.json())
@@ -88,7 +88,6 @@ function retriveActive() {
         if (data.success) {
           alert(data.success);
          
-          document.getElementById(`reservation-${reservation_id}`).remove();
           location.reload();
         } else {
           alert(data.error || "Failed to delete reservation.");
