@@ -198,10 +198,16 @@ Let me know if you want it even shorter or more casual!</p>
       </form>
     </div>
   </div>
-  <div id="availableTables" class="ye">
-
+  <div id="availableTables" class="ye"></div>
+  <div id="reservationModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Confirm Reservation</h3>
+    <p id="modalTableInfo"></p>
+    <button id="confirmReservationBtn">Confirm</button>
   </div>
-  </div>
+</div>
+  
 
 </div>
 
