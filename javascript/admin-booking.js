@@ -39,19 +39,8 @@ function displayReservations(reservations) {
   });
 }
 
+
 // Fetch active reservations
-function retriveActive() {
-  fetch('../backendAdmin/retrieveActive.php')
-    .then(response => {
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      return response.json();
-    })
-    .then(data => displayRetrieveActive(data))
-    .catch(error => {
-      console.error('Error fetching active reservations:', error);
-      alert('There was an error fetching active reservations.');
-    });
-}
 
 function displayRetrieveActive(reservations) {
   const tableBody = document.querySelector('#ActiveReservation tbody');
@@ -72,6 +61,19 @@ function displayRetrieveActive(reservations) {
     `;
     tableBody.appendChild(row);
   });
+}
+
+function retriveActive() {
+  fetch('../backendAdmin/retrieveActive.php')
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.json();
+    })
+    .then(data => displayRetrieveActive(data))
+    .catch(error => {
+      console.error('Error fetching active reservations:', error);
+      alert('There was an error fetching active reservations.');
+    });
 }
 
 /*DELETE RESERVATION*/

@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: application/json'); // So JS can parse it
+
 
 include '../database.php';
 
