@@ -10,7 +10,7 @@ if (!isset($_GET['reservation_id'])) {
 
 $reservation_id = $_GET['reservation_id'];
 
-// Prepare and execute the DELETE query
+
 $stmt = $conn->prepare("DELETE FROM reservations WHERE reservation_id = ?");
 $stmt->bind_param("i", $reservation_id);
 

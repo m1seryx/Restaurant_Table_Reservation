@@ -1,14 +1,14 @@
 <?php
 include '../database.php'; 
 
-$registrationMessage = ""; // Variable to hold any message
+$registrationMessage = ""; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-    // Prepare SELECT query to check if username or email already exists
+  
     $sql = "SELECT * FROM user WHERE username = ? OR email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ss", $username, $email); 
@@ -16,10 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->store_result();
 
     if ($stmt->num_rows > 0) {
-        // Username or Email already taken
+     
         $registrationMessage = "Username or Email already taken.";
     } else {
-        // Prepare INSERT query to insert new user
+      
         $sql = "INSERT INTO user (username, email, password) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sss", $username, $email, $password); 
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // Close statement
+ 
     $stmt->close();
 }
 
@@ -95,12 +95,12 @@ $conn->close();
     messageBox.style.display = 'block';
     messageBox.style.color = registrationMessage.includes("Successful") ? "green" : "red";
 
-    // If the message indicates success, show the popup
+   
     if (registrationMessage.includes("Successful")) {
       setTimeout(() => {
         document.getElementById('back').style.display = 'flex';
         document.getElementById('pmessage').style.display = 'block';
-      }, 1000); // Delay showing the popup for 1 second
+      }, 1000);
     }
   }
 </script>
